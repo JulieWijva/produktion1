@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="radarstemmen">
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/LOGO0.PNG" alt="nav_logo" class="nav_logo" />
+        </a>
+        
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div> <!-- lukke kryds -->
+          <a href="program.html">PROGRAM</a>
+          <a href="gæsternesvæg.html">GÆSTERNES VÆG</a>
+          <a class="værmed-link" href="værmed.html">VÆR MED</a>
+          <a class="omradar-link" href="omradar.html">OM RADAR</a>
+
+<!-- Vær med med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="værmed-visning" >VÆR MED</a>
+    <div class="dropdown-content">
+      <a href="medlem.html">Bliv medlem</a>
+      <a href="frivillig.html">Frivillig</a>
+      <a href="partnerskaber.html">Partnerksaber</a>
+    </div>
+  </div>
+
+  <!-- Om Radar med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="omradar-visning" >OM RADAR</a>
+    <div class="dropdown-content">
+      <a href="hvemervi.html">Hvem er vi?</a>
+      <a href="praktiskinfo.html">Praktisk info</a>
+    </div>
+            
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("menu-open");
+        }
+      </script>
+    </header>
+
+ <!--  Section -->
+    <div class="radarstemmen-billede">
+        <img src="img/radarstemmen.jpg" alt="radarstemmen image" class="radarstemmen-img" />
+    </div>
+    <div class="radarstemmen-content">
+        <section class="radarstemme-section">
+            <h2>FREMTIDENS RADARSTEMME</h2>
+            <p>
+                Har du en upcoming kunstner, du gerne vil se på Radar? Del din stemme, og måske bliver din favorit næste måneds stjerne!
+            </p>
+            <form class="radarstemme-form">
+                <input type="text" id="artist-wish" name="artist-wish" placeholder="Skriv kunstnerens navn her" required>
+                <button type="submit" class="btn">INDSEND</button>
+            </form>
+        </section>
+    </div>
+  
+   
+     <!-- FOOTER -->
+     <footer>
+        <div class="footer-container">
+          <!-- Maps Section -->
+          <div class="footer-column">
+            <h3>FIND OS HER</h3>
+            <iframe 
+src="img/radar-adresse-pink.jpg"
+            width="100%" 
+              height="200" 
+              style="border:0;" 
+              loading="lazy">
+            </iframe>
+          </div>
+          
+          <!-- Website Info Section -->
+          <div class="footer-column">
+            
+            <ul>
+              <li><a href="https://www.facebook.com/radarlive" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://www.instagram.com/radarlive/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://www.youtube.com/user/radarliverec" target="_blank">YOUTUBE</a></li>
+            </ul>
+          </div>
+          
+          <!-- Newsletter Signup Section -->
+          <div class="footer-column newsletter-section">
+            <h3>TILMELD NYHEDSBREV</h3>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="DIT NAVN" required />
+              <input type="email" name="email" placeholder="DIN E-MAIL" required />
+              <button type="submit">TILMELD</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      
+    </body>
+  </html>

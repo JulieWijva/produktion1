@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vær Med Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="menu-container">
+    <div class="menu-header">
+       
+    </div>
+    <div class="close-menu1" onclick="toggleMenu()">x</div> <!-- Close Button -->
+
+    <div class="menu-links">
+      <a href="medlem.html">BLIV MEDLEM</a>
+      <a href="frivillig.html">FRIVILLIG</a>
+      <a href="partnerskaber.html">PARTNERSKABER</a>
+    </div>
+  </div>
+  <script>
+    function toggleMenu() {
+      // Naviger tilbage til forsiden
+      window.location.href = "index.html";
+    }
+  </script>
+  <script>
+    // Tjek skærmbredden og omdiriger, hvis den bliver større end en bestemt værdi (f.eks. 768px)
+    function checkScreenSize() {
+      if (window.innerWidth > 500) {
+        window.location.href = "index.html"; // Omdiriger til forsiden
+      }
+    }
+  
+    // Lyt til ændringer i skærmstørrelse
+    window.addEventListener("resize", checkScreenSize);
+  
+    // Tjek bredden ved første indlæsning
+    document.addEventListener("DOMContentLoaded", checkScreenSize);
+  </script>
+  
+</body>
+</html>

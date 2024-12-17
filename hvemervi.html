@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="program-page">
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/LOGO0.PNG" alt="nav_logo" class="nav_logo" />
+        </a>
+        
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div> <!-- lukke kryds -->
+          <a href="program.html">PROGRAM</a>
+          <a href="gæsternesvæg.html">GÆSTERNES VÆG</a>
+          <a class="værmed-link" href="værmed.html">VÆR MED</a>
+          <a class="omradar-link" href="omradar.html">OM RADAR</a>
+
+<!-- Vær med med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="værmed-visning" >VÆR MED</a>
+    <div class="dropdown-content">
+      <a href="medlem.html">Bliv medlem</a>
+      <a href="frivillig.html">Frivillig</a>
+      <a href="partnerskaber.html">Partnerksaber</a>
+    </div>
+  </div>
+
+  <!-- Om Radar med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="omradar-visning" >OM RADAR</a>
+    <div class="dropdown-content">
+      <a href="hvemervi.html">Hvem er vi?</a>
+      <a href="praktiskinfo.html">Praktisk info</a>
+    </div>
+            
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("menu-open");
+        }
+      </script>
+    </header>
+
+      <!-- Intro Section -->
+      <section class="omradar-section">
+        <h1>HVEM ER VI?</h1>
+        <p>Radar er et dynamisk kulturhus, der samler mennesker omkring 
+            nyskabende musik, kunst og fællesskaber. Vi er et sted, hvor 
+            kreativitet møder engagement, og hvor upcoming 
+            kunstnere kan udfolde sig i inspirerende rammer.
+      </p>
+    </section>
+
+    <section class="omradar1-section">
+        <h1>VORES FORMÅL</h1>
+        <p>1. Præsentere musik af høj kunstnerisk kvalitet med fokus på fornyelse og mangfoldighed primært gennem drift af spillested
+            <p>2. Fremme den rytmiske musiks trivsel og udvinkling lokalt, regionalt og nationalt</p>
+            <p>3. Udvikle den musikalske oplevelse og fremme nytænkning og udvikling af det musikalske område</p>
+            <p>4. At indgå som en åben og konstruktiv spiller i det kulturelle landskab, som omgiver Radar</p>
+      </p>
+    </section>
+
+  <!-- PROGRAM INDHOLD 1 -->
+  <section class="radar-item">
+    <div class="billede-image">
+        <img src="img/radar-aarhus.jpeg" alt="beskrivende billede">
+    </div>
+    <div class="billede-info">
+        <h2>VORES VÆRDIER</h2>
+        <p>Kreativitet</p>
+        <p>Fællesskab</p>
+        <p>Diversitet</p>
+        <p>Musikoplevelser</p>
+        <p>Stemning</p>
+    </div>
+</section>
+
+<section class="omradar-section">
+    <h1>HISTORIEN BAG RADAR</h1>
+    <p>Radar blev grundlagt som et alternativt spillested i hjertet af 
+        Aarhus, med en vision om at skabe en platform for eksperimenterende 
+        og nichepræget musik. Ideen opstod fra et ønske om at fremme kunstnere, 
+        der udfordrer de etablerede musikgrænser, og give upcoming talenter en 
+        chance for at optræde på en professionel scene. 
+
+        <p>Radar har altid haft 
+            fokus på at skabe en autentisk og rummelig atmosfære, hvor både 
+            kunstnere og publikum kan mødes omkring musikkens mangfoldighed. 
+        </p>
+       
+        <p>I de første år voksede Radar hurtigt til at blive et centralt 
+            knudepunkt i byens musikscene. Gennem årene har spillestedet været 
+            kernen for nye projekter og samarbejder, og har opbygget et 
+            stærkt fællesskab af musikelskere og kunstnere. Radar er mere end bare 
+            et spillested – det er et fællesskab, hvor kreativitet og autenticitet 
+            trives.</p>
+  </p>
+</section>
+
+    <footer>
+        <div class="footer-container">
+          <!-- Maps Section -->
+          <div class="footer-column">
+            <h3>FIND OS HER</h3>
+            <iframe 
+src="img/radar-adresse-pink.jpg"
+            width="100%" 
+              height="200" 
+              style="border:0;" 
+              loading="lazy">
+            </iframe>
+          </div>
+          
+          <!-- Website Info Section -->
+          <div class="footer-column">
+            
+            <ul>
+              <li><a href="https://www.facebook.com/radarlive" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://www.instagram.com/radarlive/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://www.youtube.com/user/radarliverec" target="_blank">YOUTUBE</a></li>
+            </ul>
+          </div>
+          
+          <!-- Newsletter Signup Section -->
+          <div class="footer-column newsletter-section">
+            <h3>TILMELD NYHEDSBREV</h3>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="DIT NAVN" required />
+              <input type="email" name="email" placeholder="DIN E-MAIL" required />
+              <button type="submit">TILMELD</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      
+    </body>
+  </html>

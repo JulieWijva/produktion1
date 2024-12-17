@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="guests-wall">
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/LOGO0.PNG" alt="nav_logo" class="nav_logo" />
+        </a>
+        
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div> <!-- lukke kryds -->
+          <a href="program.html">PROGRAM</a>
+          <a href="gæsternesvæg.html">GÆSTERNES VÆG</a>
+          <a class="værmed-link" href="værmed.html">VÆR MED</a>
+          <a class="omradar-link" href="omradar.html">OM RADAR</a>
+
+<!-- Vær med med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="værmed-visning" >VÆR MED</a>
+    <div class="dropdown-content">
+      <a href="medlem.html">Bliv medlem</a>
+      <a href="frivillig.html">Frivillig</a>
+      <a href="partnerskaber.html">Partnerksaber</a>
+    </div>
+  </div>
+
+  <!-- Om Radar med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="omradar-visning" >OM RADAR</a>
+    <div class="dropdown-content">
+      <a href="hvemervi.html">Hvem er vi?</a>
+      <a href="praktiskinfo.html">Praktisk info</a>
+    </div>
+            
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("menu-open");
+        }
+      </script>
+    </header>
+
+
+<body class="member-page">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="img/alex_rm16.jpg" alt="Bliv medlem" class="hero-image">
+        <h1 class="hero-title">FRIVILLIG</h1>
+    </section>
+
+    <section class="signup-section">
+        <div class="signup-container">
+            <button class="signup-button">SØG HER</button>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="content-section">
+        <h2>HVAD VIL DET SIGE AT VÆRE FRIVILLIG?</h2>
+        <p>Har du lyst til at gøre en forskel, blive en del af et engageret 
+            fællesskab og skabe oplevelser, der huskes for livet? Som frivillig 
+            hos os får du muligheden for at bidrage med din tid og energi i et inspirerende miljø, 
+            hvor fællesskab og sammenhold er i fokus. Uanset om du har meget eller lidt tid at give, 
+            er din indsats uvurderlig – og vi lover, at du får masser af gode oplevelser med på vejen!.</p>
+    </section>
+
+    <section class="image-text-section">
+        <img src="img/frivillig5.jpeg" alt="Medlemsfordele" class="content-image">
+        <div class="content-text">
+            <h3>MØD EN FRIVLLIG</h3>
+            <p>Hvem er bedre til at fortælle om det frivillige arbejde end dem,
+                 der allerede gør en forskel? Her kan du møde nogle af vores fantastiske 
+                 frivillige og høre deres historier om, hvorfor de valgte at være med, 
+                 hvad de får ud af det, og hvordan de skaber glæde for andre – og for sig selv.</p>
+        </div>
+    </section>
+
+    <section class="image-text-section">
+        <img src="img/fælles.png" alt="Støt Kunstnerne" class="content-image">
+        <div class="content-text">
+            <h3>BLIV EN DEL AF FÆLLESSKABET</h3>
+            <p>Når du er frivillig, træder du ind i et fællesskab af passionerede mennesker, 
+                der deler din interesse for kunst, kultur og unikke oplevelser. Her kan du knytte 
+                forbindelser, deltage i inspirerende arrangementer og være en del af et miljø, hvor 
+                kreativitet og fælles oplevelser er i centrum</p>
+        </div>
+    </section>
+
+    <section class="image-text-section">
+        <img src="img/ibd_rm-31-xl.jpg" alt="Bliv en del af fællesskabet" class="content-image">
+        <div class="content-text">
+            <h3>SKAB UFROGLEMMELIGE OPLEVELSER</h3>
+            <p>Som frivillig er du med til at skabe øjeblikke, der bliver husket. 
+                Fra at byde gæster velkommen med et smil til at sikre, at alt kører på 
+                skinner bag kulisserne, er din indsats afgørende for at skabe magiske oplevelser. 
+                Bliv frivillig og oplev glæden ved at gøre noget særligt for andre!</p>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <div class="footer-container">
+          <!-- Maps Section -->
+          <div class="footer-column">
+            <h3>FND OS HER</h3>
+            <iframe 
+    src="img/radar-adresse-pink.jpg"
+            width="100%" 
+              height="200" 
+              style="border:0;" 
+              loading="lazy">
+            </iframe>
+          </div>
+          
+          <!-- Website Info Section -->
+          <div class="footer-column">
+            
+            <ul>
+              <li><a href="https://www.facebook.com/radarlive" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://www.instagram.com/radarlive/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://www.youtube.com/user/radarliverec" target="_blank">YOUTUBE</a></li>
+            </ul>
+          </div>
+          
+          <!-- Newsletter Signup Section -->
+          <div class="footer-column newsletter-section">
+            <h3>TILMELD NYHEDSBREV</h3>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="DIT NAVN" required />
+              <input type="email" name="email" placeholder="DIN E-MAIL" required />
+              <button type="submit">TILMELD</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      
+    </body>
+    </html>

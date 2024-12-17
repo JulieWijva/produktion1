@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="guests-wall">
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/LOGO0.PNG" alt="nav_logo" class="nav_logo" />
+        </a>
+        
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div> <!-- lukke kryds -->
+          <a href="program.html">PROGRAM</a>
+          <a href="gæsternesvæg.html">GÆSTERNES VÆG</a>
+          <a class="værmed-link" href="værmed.html">VÆR MED</a>
+          <a class="omradar-link" href="omradar.html">OM RADAR</a>
+
+<!-- Vær med med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="værmed-visning" >VÆR MED</a>
+    <div class="dropdown-content">
+      <a href="medlem.html">Bliv medlem</a>
+      <a href="frivillig.html">Frivillig</a>
+      <a href="partnerskaber.html">Partnerksaber</a>
+    </div>
+  </div>
+
+  <!-- Om Radar med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="omradar-visning" >OM RADAR</a>
+    <div class="dropdown-content">
+      <a href="hvemervi.html">Hvem er vi?</a>
+      <a href="praktiskinfo.html">Praktisk info</a>
+    </div>
+            
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("menu-open");
+        }
+      </script>
+    </header>
+
+<!-- Gæsternes Væg -->
+<section class="guests-wall-section">
+    <h2>GÆSTERNES VÆG</h2>
+    <p class="intro-text">
+        Velkommen til Gæsternes Væg – et levende galleri dedikeret til dig og alle, 
+        der har været en del af Radar-fællesskabet. Her kan du opleve stemningsbilleder, 
+        læse om tidligere koncerter, og se de unikke øjeblikke, som vores gæster har delt. 
+        Gå på opdagelse og bliv inspireret!
+    </p>
+    <a href="" class="btn">DEL VIA DIN INSTGRAM</a>
+</section>
+
+
+
+    <!-- Galleri -->
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="img/IMG_3615.jpeg" alt="Gæst 1">
+        <a href=""></a><p>"En kretiv aften på Radar"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3605.jpeg" alt="Gæst 2">
+        <p>"Weekenden på Radar"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3606.jpeg" alt="Gæst 3">
+        <p>"Fuldmånekoncert"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3607.jpeg" alt="Gæst 4">
+        <p>"Sæsonåbning"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3608.jpeg" alt="Gæst 5">
+        <p>"Job på RADAR?"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3612.jpeg" alt="Gæst 6">
+        <p>"Lørdags event"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3610.jpeg" alt="Gæst 7">
+        <p>"Musik i weekenden"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3611.jpeg" alt="Gæst 8">
+        <p>"Vinterjazz"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3609.jpeg" alt="Gæst 8">
+        <p>"Singvogel"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3613.jpeg" alt="Gæst 8">
+        <p>"Ny på radar"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3614.jpeg" alt="Gæst 8">
+        <p>"Spor festival"</p>
+      </div>
+      <div class="image-item">
+        <img src="img/IMG_3604.jpeg" alt="Gæst 8">
+        <p>Jazzens landskab"</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <!-- Maps Section -->
+      <div class="footer-column">
+        <h3>FND OS HER</h3>
+        <iframe 
+src="img/radar-adresse-pink.jpg"
+        width="100%" 
+          height="200" 
+          style="border:0;" 
+          loading="lazy">
+        </iframe>
+      </div>
+      
+      <!-- Website Info Section -->
+      <div class="footer-column">
+        
+        <ul>
+          <li><a href="https://www.facebook.com/radarlive" target="_blank">FACEBOOK</a></li>
+          <li><a href="https://www.instagram.com/radarlive/" target="_blank">INSTAGRAM</a></li>
+          <li><a href="https://www.youtube.com/user/radarliverec" target="_blank">YOUTUBE</a></li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter Signup Section -->
+      <div class="footer-column newsletter-section">
+        <h3>TILMELD NYHEDSBREV</h3>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="DIT NAVN" required />
+          <input type="email" name="email" placeholder="DIN E-MAIL" required />
+          <button type="submit">TILMELD</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</html>

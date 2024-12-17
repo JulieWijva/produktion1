@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/LOGO0.PNG" alt="nav_logo" class="nav_logo" />
+        </a>
+        
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div> <!-- lukke kryds -->
+          <a href="program.html">PROGRAM</a>
+          <a href="gæsternesvæg.html">GÆSTERNES VÆG</a>
+          <a class="værmed-link" href="værmed.html">VÆR MED</a>
+          <a class="omradar-link" href="omradar.html">OM RADAR</a>
+
+<!-- Vær med med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="værmed-visning" >VÆR MED</a>
+    <div class="dropdown-content">
+      <a href="medlem.html">Bliv medlem</a>
+      <a href="frivillig.html">Frivillig</a>
+      <a href="partnerskaber.html">Partnerksaber</a>
+    </div>
+  </div>
+
+  <!-- Om Radar med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="omradar-visning" >OM RADAR</a>
+    <div class="dropdown-content">
+      <a href="hvemervi.html">Hvem er vi?</a>
+      <a href="praktiskinfo.html">Praktisk info</a>
+    </div>
+            
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("menu-open");
+        }
+      </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <img src="img/pult.png" alt="Hero image" class="hero-img" />
+          <div class="hero-content">
+            <h1>VELKOMMEN TIL RADAR</h1>
+    
+            <p>Karen Wegeners Gade 6,</p>
+            <p>8000 Aarhus</p>
+          </div>
+        </section>
+      
+        <!-- Intro Section -->
+        <section class="intro-section">
+            <h1>HVEM ER VI?</h1>
+            <p>Vi er et kulturelt spillested der er dedikeret til at fremme eksperimenterende og nichepræget musik. 
+                Med fokus på rytmisk musik og alternative genrer tilbyder vi en unik platform 
+                for både etablerede og upcoming kunstnere. Spillestedet er en vigtig del af Aarhus' 
+                musik- og kulturliv og fungerer som et samlingspunkt for dem, der ønsker en unik oplevelse.
+          </p>
+          <p>Vores budskab er at skabe et åbent og rummeligt fællesskab, hvor musik og kultur kan 
+            blomstre, og hvor MANGFOLDIGHED og KREATIVITET står i centrum. </p>
+          <a href="omradar.html" class="btn">LÆS MERE OM OS</a>
+        </section>
+      
+<!-- Billede efter første sektion -->
+<div class="image-container">
+    <img src="img/bogr.png" alt="Et beskrivende billede">
+</div>
+
+         <!-- Intro Section -->
+         <section class="intro-section">
+            <h1>PROGRAM</h1>
+            <p>Vores program er dedikeret til at fremme den eksperimenterende og nicheprægede musik, 
+                hvor både etablerede og upcoming kunstnere får mulighed for at dele deres passion med verden. 
+                Hos os er der plads til det uventede, det anderledes, og det som endnu ikke er blevet opdaget 
+          </p>
+          <p>Som noget helt unikt tilbyder netop dig, at være med til at forme vores program! 
+            Gennem "RADARSTEMMEN" kan du indsende dine ønsker om upcoming kunstnere, som du mener fortjener 
+            at blive opdaget. Din stemme betyder noget, og vi vil gerne give dem, du mener har noget særligt, 
+            chancen for at blive hørt. </p>
+          <a href="radarstemmen.html" class="btn">ØNSK HER</a>
+        </section>
+
+      <!-- Billede efter anden sektion -->
+<div class="image-container">
+    <img src="img/sorthvid.jpg" alt="Et beskrivende billede">
+</div>
+         <!-- Intro Section -->
+         <section class="intro-section">
+            <h1>GÆSTERNE</h1>
+            <p>Gæsternes Væg er stedet, hvor vi samler de fantastiske oplevelser og meninger fra vores gæster. 
+                Her kan du finde udtalelser, feedback og øjeblikke fra vores besøgende, der deler deres oplevelser 
+                med os på sociale medier. Hvis du har brugt hashtagget #Radar eller tagget os på sociale platforme,
+                 har du mulighed for at blive en del af væggen og vise, hvad du elsker ved Radar.
+          </p>
+          <p>Men Gæsternes Væg er mere end bare et galleri af sociale medier. Det er også her, vi fremhæver 
+            vores månedlige "Radarstemmer" - de upcoming kunstnere, som vores gæster har indsendt deres ønsker om. 
+            Hver måned giver vi stemme til nye talenter, og her kan du få indsigt i, hvem der har været i fokus og 
+            hvilke spændende talenter, vi har opdaget sammen. </p>
+          <a href="gæsternesvæg.html" class="btn">SE GÆSTERNES VÆG</a>
+        </section>
+      
+ <!-- Billede efter tredje sektion -->
+ <div class="image-container">
+    <img src="img/ledninger.jpeg" alt="Et beskrivende billede">
+</div>
+
+    <footer>
+        <div class="footer-container">
+          <!-- Maps Section -->
+          <div class="footer-column">
+            <h3>FIND OS HER</h3>
+            <iframe 
+src="img/radar-adresse-pink.jpg"
+            width="100%" 
+              height="200" 
+              style="border:0;" 
+              loading="lazy">
+            </iframe>
+          </div>
+          
+          <!-- Website Info Section -->
+          <div class="footer-column">
+            
+            <ul>
+              <li><a href="https://www.facebook.com/radarlive" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://www.instagram.com/radarlive/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://www.youtube.com/user/radarliverec" target="_blank">YOUTUBE</a></li>
+            </ul>
+          </div>
+          
+          <!-- Newsletter Signup Section -->
+          <div class="footer-column newsletter-section">
+            <h3>TILMELD NYHEDSBREV</h3>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="DIT NAVN" required />
+              <input type="email" name="email" placeholder="DIN E-MAIL" required />
+              <button type="submit">TILMELD</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      
+    </body>
+  </html>

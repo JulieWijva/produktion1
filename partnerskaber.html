@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="guests-wall">
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/LOGO0.PNG" alt="nav_logo" class="nav_logo" />
+        </a>
+        
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div> <!-- lukke kryds -->
+          <a href="program.html">PROGRAM</a>
+          <a href="gæsternesvæg.html">GÆSTERNES VÆG</a>
+          <a class="værmed-link" href="værmed.html">VÆR MED</a>
+          <a class="omradar-link" href="omradar.html">OM RADAR</a>
+
+<!-- Vær med med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="værmed-visning" >VÆR MED</a>
+    <div class="dropdown-content">
+      <a href="medlem.html">Bliv medlem</a>
+      <a href="frivillig.html">Frivillig</a>
+      <a href="partnerskaber.html">Partnerksaber</a>
+    </div>
+  </div>
+
+  <!-- Om Radar med dropdown i desktop -->
+  <div class="dropdown">
+    <a class="omradar-visning" >OM RADAR</a>
+    <div class="dropdown-content">
+      <a href="hvemervi.html">Hvem er vi?</a>
+      <a href="praktiskinfo.html">Praktisk info</a>
+    </div>
+            
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("menu-open");
+        }
+      </script>
+    </header>
+
+
+<body class="member-page">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="img/radarskilt.jpeg" alt="Bliv medlem" class="hero-image">
+        <h1 class="hero-title">PARTNERSKABER</h1>
+    </section>
+
+    <section class="signup-section">
+        <div class="signup-container">
+            <button class="signup-button">ANMOD HER</button>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="content-section">
+        <h2>PARTNERSKAB MED RADAR</h2>
+        <p>Vil du være med til at skabe noget unikt gennem et stærkt partnerskab? 
+            Vi tror på, at gode samarbejder skaber værdi for alle parter. Som partner 
+            bliver du en del af et engageret fællesskab, hvor vi sammen gør en forskel 
+            og skaber uforglemmelige oplevelser.</p>
+    </section>
+
+    <section class="image-text-section">
+        <img src="img/DSCF0661.jpg" alt="Medlemsfordele" class="content-image">
+        <div class="content-text">
+            <h3>BLIV EN DEL AF OS</h3>
+            <p>Som partner hos os bliver du en del af et dedikeret fællesskab med fokus 
+                på kreativitet og fælles ambitioner. Sammen kan vi udvikle idéer og projekter, 
+                der gør en forskel og skaber værdi for både dig, os og vores publikum. 
+                Vi glæder os til at byde dig velkommen som en vigtig del af vores rejse!</p>
+        </div>
+    </section>
+
+    <section class="image-text-section">
+        <img src="img/3partner.jpeg" alt="Støt Kunstnerne" class="content-image">
+        <div class="content-text">
+            <h3>PARTNERFORDELE</h3>
+            <p>Vi værdsætter vores partnere og sørger for, at du får noget ekstra ud af samarbejdet. 
+                Som partner får du blandt andet eksponering i vores netværk, adgang til eksklusive 
+                events og muligheden for at være en aktiv del af spændende projekter.</p>
+        </div>
+    </section>
+
+    <section class="image-text-section">
+        <img src="img/spørg.png" alt="Bliv en del af fællesskabet" class="content-image">
+        <div class="content-text">
+            <h3>HAR DU EN IDE TIL PARTNERSKABER?</h3>
+            <p>Har du en vision for et potentielt samarbejde? Vi er altid åbne for nye idéer 
+                og spændende partnerskaber. Uanset om det er et konkret projekt eller en innovativ 
+                tanke, så vil vi gerne høre fra dig. Lad os tage en snak og udforske mulighederne sammen!</p>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <div class="footer-container">
+          <!-- Maps Section -->
+          <div class="footer-column">
+            <h3>FND OS HER</h3>
+            <iframe 
+    src="img/radar-adresse-pink.jpg"
+            width="100%" 
+              height="200" 
+              style="border:0;" 
+              loading="lazy">
+            </iframe>
+          </div>
+          
+          <!-- Website Info Section -->
+          <div class="footer-column">
+            
+            <ul>
+              <li><a href="https://www.facebook.com/radarlive" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://www.instagram.com/radarlive/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://www.youtube.com/user/radarliverec" target="_blank">YOUTUBE</a></li>
+            </ul>
+          </div>
+          
+          <!-- Newsletter Signup Section -->
+          <div class="footer-column newsletter-section">
+            <h3>TILMELD NYHEDSBREV</h3>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="DIT NAVN" required />
+              <input type="email" name="email" placeholder="DIN E-MAIL" required />
+              <button type="submit">TILMELD</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      
+    </body>
+    </html>
